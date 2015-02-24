@@ -179,11 +179,10 @@ def main():
         name = input("Enter player name: ")
         names.append(name)
     print()
-        
-    game = BJ_Game(names)
 
     again = None
     while again != "n":
+        game = BJ_Game(names)
         game.play()
         again = games.ask_yes_no("\nDo you want to play again?: ")
 
